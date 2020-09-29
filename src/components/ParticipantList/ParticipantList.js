@@ -1,10 +1,9 @@
 import React from 'react';
-import { participants } from '../participants';
 import Participant from './Participant';
 
 class ParticipantList extends React.Component {
     
-    generateParticipants( ){
+    generateParticipants( participants ){
         // return list of participants created from imported participants
         let p = participants.map( participant => {
             return (
@@ -22,9 +21,10 @@ class ParticipantList extends React.Component {
     }
 
     render( ){
+        const { participants } = this.props;
         return (
             <ul >
-                {this.generateParticipants()}
+                { this.generateParticipants( participants ) }
             </ul>
         );
     }
