@@ -40,6 +40,6 @@ const participants = [
     }
 ];
 
-export default {
-    participants,
+export {
+    participants
 }
