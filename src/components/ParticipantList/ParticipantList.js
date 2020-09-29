@@ -1,5 +1,6 @@
 import React from 'react';
 import Participant from './Participant';
+import './ParticipantList.css';
 
 class ParticipantList extends React.Component {
     
@@ -23,7 +24,7 @@ class ParticipantList extends React.Component {
     render( ){
         const { participants } = this.props;
         return (
-            <ul >
+            <ul id="participantlist">
                 { this.generateParticipants( participants ) }
             </ul>
         );

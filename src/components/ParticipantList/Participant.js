@@ -6,10 +6,16 @@ class Participant extends React.Component {
         let idHash = btoa(`${name}${id}`);
         return (
             <li id={idHash}>
-                <h3>{name}</h3>
-                <img src={avatar} />
-                <div className={ inSession ? 'inSession' : '' }></div>
-                <div>{ onStage ? 'on stage' : 'inactive' }</div>
+                <div className="section--row">
+                    <img src={avatar} />
+                    <div className="section--column">
+                        <h3>{name}</h3>
+                        <div className="section--row">
+                            <div className={ inSession ? 'inSession' : 'outSession' }></div>
+                            <div className="onstage">{ onStage ? 'on stage' : 'inactive' }</div>
+                        </div>
+                    </div>
+                </div>
             </li>
         );
     }

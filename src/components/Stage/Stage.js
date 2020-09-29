@@ -26,7 +26,7 @@ class Stage extends React.Component {
     render( ){
         const { participants } = this.props;
         return (
-            <ul >
+            <ul id="stagewrapper">
                 { this.generateParticipants( participants ) }
             </ul>
         );
