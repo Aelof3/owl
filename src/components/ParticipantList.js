@@ -1,5 +1,5 @@
 import React from 'react';
-import { participants } from './participants';
+import { participants } from '../participants';
 import Participant from './Participant';
 
 class ParticipantList extends React.Component {

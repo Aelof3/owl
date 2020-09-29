@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ParticipantList from './ParticipantList';
+import ParticipantList from './components/ParticipantList';
 
 function App() {
   return (
